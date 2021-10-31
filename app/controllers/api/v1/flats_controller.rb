@@ -16,6 +16,16 @@ module Api
         end
       end
 
+      def update
+        flat = Flat.find(params[:id])
+
+        if flat.update(flat_params)
+          render json: flat, status: :ok
+        else
+          render json: flat.errors, status: :unprocessable_entity
+        end
+      end
+
       def destroy
         Flat.find(params[:id]).destroy!
 

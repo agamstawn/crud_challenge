@@ -15,6 +15,16 @@ module Api
         end
       end
 
+      def update
+        neighborhood = Neighborhood.find(params[:id])
+
+        if neighborhood.update(neighborhood_params)
+          render json: neighborhood, status: :ok
+        else
+          render json: neighborhood.errors, status: :unprocessable_entity
+        end
+      end
+
       def destroy
         Neighborhood.find(params[:id]).destroy!
 
