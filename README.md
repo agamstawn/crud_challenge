@@ -33,7 +33,7 @@ you can do:
 
 Create user
 
-**curl --header "Content-Type: application/json" --request POST --data '{"name": "Agam 2", "email": "setiawanagam@gmail.com"}' http://localhost:3000/api/v1/users -v **
+**curl --header "Content-Type: application/json" --request POST --data '{"name": "Agam 2", "email": "setiawanagam@gmail.com"}' http://localhost:3000/api/v1/users -v**
 
 
 Read data user
@@ -42,12 +42,12 @@ Read data user
 
 Update data user with id = 2
 
-**curl --header "Content-Type: application/json" --request PUT --data '{"name": "Agam 2", "email": "setiawanagamaa@gmail.com"}' http://localhost:3000/api/v1/users/2 -v **
+**curl --header "Content-Type: application/json" --request PUT --data '{"name": "Agam 2", "email": "setiawanagamaa@gmail.com"}' http://localhost:3000/api/v1/users/2 -v**
 
 
 Delete user with id = 2
 
-**curl --header "Content-Type: application/json" --request DELETE http://localhost:3000/api/v1/users/2 -v **
+**curl --header "Content-Type: application/json" --request DELETE http://localhost:3000/api/v1/users/2 -v**
 
 * How to run the test suite
 
