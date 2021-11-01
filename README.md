@@ -37,13 +37,16 @@ Create user
 
 
 Read data user
+
 **curl http://localhost:3000/api/v1/users**
 
 Update data user with id = 2
+
 **curl --heacurl --header "Content-Type: application/json" --request PUT --data '{"name": "Agam 2", "email": "setiawanagamaa@gmail.com"}' http://localhost:3000/api/v1/users/2 -v
 **
 
 Delete user with id = 2
+
 **curl --header "Content-Type: application/json" --request DELETE http://localhost:3000/api/v1/users/2 -v **
 
 * How to run the test suite
